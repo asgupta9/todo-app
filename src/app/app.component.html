@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" class="container">
+  <div class = "row">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" id="comment" [(ngModel)] = 'comment'></textarea>
+        <button type="button" class="btn btn-primary" (click) = "changeDisplay('aakak') ">submit</button>
+      </div>
+    </div>
+      
+    <div class="col-lg-6">
+        <label for="comment">Your Comment:</label>
+      <p class="border">{{comment}}</p>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
